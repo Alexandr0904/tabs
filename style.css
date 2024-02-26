@@ -1,0 +1,76 @@
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: bisque;
+  flex-direction: column;
+  gap: 50px;
+}
+.tab {
+  width: 800px;
+}
+.Tab__top {
+  display: flex;
+  gap: 2px;
+}
+.Tab__item {
+  padding: 15px 30px;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  font-weight: 800;
+  cursor: pointer;
+}
+.item-active {
+  background-color: white;
+  color: blue;
+  border-top: 2px solid blue;
+}
+.Tab__content {
+  background-color: white;
+  padding: 15px;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  display: none;
+}
+.content-active {
+  display: block;
+}
+.drop {
+  background-color: white;
+  border-radius: 10px;
+  border-bottom: 1px solid black;
+  padding: 10px;
+  width: 260px;
+}
+.drop__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.drop__content {
+  display: flex;
+  flex-direction: column;
+  height: 0px;
+  transition: all 0.3s ease 0s;
+  overflow: hidden;
+}
+.drop__icon {
+  transition: all 0.3s ease 0s;
+}
+.drop__content-active {
+  height: 200px;
+  padding-top: 20px;
+}
+.drop__icon-active {
+  transform: rotate(180deg);
+}
+.drop__item {
+  cursor: pointer;
+  padding: 10px;
+}
+.drop__item:hover {
+  background-color: antiquewhite;
+}
